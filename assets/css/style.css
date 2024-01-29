@@ -2871,6 +2871,14 @@ hr {
     padding-top: 150px
 }
 
+/* Kiểu cho màn hình nhỏ (điện thoại) */
+@media only screen and (max-width: 600px) {
+    .slider-area .hero__caption {
+        margin-left: 10px; /* Điều chỉnh margin cho màn hình nhỏ */
+        padding-top: 80px; /* Điều chỉnh padding-top cho màn hình nhỏ nếu cần thiết */
+    }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .slider-area .hero__caption {
         padding-top: 70px

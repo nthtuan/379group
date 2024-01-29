@@ -2797,36 +2797,35 @@ hr {
     z-index: 99
 }
 
+/* Mặc định cho mọi kích thước màn hình */
 .slider-height {
-    min-height: 900px;
+    min-height: 1000px;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover
+    background-size: cover;
 }
 
+/* Kích thước màn hình từ 768px đến 991px */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .slider-height {
-        min-height: 620px
+        min-height: 620px;
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .slider-height {
-        min-height: 600px
-    }
-}
-
+/* Kích thước màn hình từ 576px đến 767px */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .slider-height {
-        min-height: 600px
+        min-height: 600px;
     }
 }
 
-@media (max-width: 575px) {
+/* Kích thước màn hình nhỏ hơn hoặc bằng 575px */
+@media only screen and (max-width: 575px) {
     .slider-height {
-        min-height: 400px
+        min-height: 400px;
     }
 }
+
 
 .slider-height2 {
     min-height: 590px;
@@ -2868,18 +2867,11 @@ hr {
 
 .slider-area .hero__caption {
     margin-left: 27px;
-    padding-top: 150px
+    padding-top: 100px
 }
 
-/* Kiểu cho màn hình nhỏ (điện thoại) */
-@media only screen and (max-width: 600px) {
-    .slider-area .hero__caption {
-        margin-left: 10px; /* Điều chỉnh margin cho màn hình nhỏ */
-        padding-top: 80px; /* Điều chỉnh padding-top cho màn hình nhỏ nếu cần thiết */
-    }
-}
 
-/* @media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
     .slider-area .hero__caption {
         padding-top: 70px
     }
@@ -2895,7 +2887,7 @@ hr {
     .slider-area .hero__caption {
         padding-top: 70px
     }
-} */
+}
 .company-name {
     text-align: center;
     font-size: 50px; /* Độ lớn của chữ */

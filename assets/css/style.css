@@ -2879,7 +2879,7 @@ hr {
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+/* @media only screen and (min-width: 768px) and (max-width: 991px) {
     .slider-area .hero__caption {
         padding-top: 70px
     }
@@ -2895,7 +2895,7 @@ hr {
     .slider-area .hero__caption {
         padding-top: 70px
     }
-}
+} */
 .company-name {
     text-align: center;
     font-size: 50px; /* Độ lớn của chữ */

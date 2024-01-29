@@ -2894,7 +2894,14 @@ hr {
     color: white; /* Màu cam, bạn có thể sửa thành màu khác nếu muốn */
     margin-top: 10px; /* Thêm margin nếu cần thiết */
     font-weight: bold;
-   
+}
+
+/* Kiểu cho màn hình nhỏ (điện thoại) */
+@media only screen and (max-width: 600px) {
+    .company-name {
+        font-size: 30px; /* Điều chỉnh kích thước chữ cho màn hình nhỏ */
+        margin-top: 5px; /* Điều chỉnh margin cho màn hình nhỏ nếu cần thiết */
+    }
 }
 
 

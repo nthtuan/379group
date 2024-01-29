@@ -2890,7 +2890,7 @@ hr {
 }
 .company-name {
     text-align: center;
-    font-size: 50px; /* Độ lớn của chữ */
+    font-size: 35px; /* Độ lớn của chữ */
     color: white; /* Màu cam, bạn có thể sửa thành màu khác nếu muốn */
     margin-top: 10px; /* Thêm margin nếu cần thiết */
     font-weight: bold;

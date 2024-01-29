@@ -2945,36 +2945,35 @@ hr {
 .slider-area .hero__caption .stock-text {
     position: relative;
     left: 119px;
-    top: -38px
+    top: -38px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .slider-area .hero__caption .stock-text {
-        top: -29px
+        top: -29px;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .slider-area .hero__caption .stock-text {
-        top: -19px
+        top: -19px;
     }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .slider-area .hero__caption .stock-text {
         top: -12px;
-        left: 40px
+        left: 40px;
     }
 }
 
 @media (max-width: 575px) {
     .slider-area .hero__caption .stock-text {
-        top: -12px;
-        left: 40px;
         top: 0;
-        left: 0
+        left: 0;
     }
 }
+
 
 .slider-area .hero__caption .stock-text h2 {
     font-size: 75px;

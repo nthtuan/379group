@@ -2895,26 +2895,35 @@ hr {
 
 
 /* Phần chữ trong slider */
-.slider-area .hero__caption h1 {
-    font-size: 4vw; /* Sử dụng vw để kích thước chữ phụ thuộc vào chiều rộng của viewport */
+.slider-area .hero__caption h1,
+.slider-area .hero__caption .stock-text h2 {
+    font-size: 5vw; /* Sử dụng vw để kích thước chữ phụ thuộc vào chiều rộng của viewport */
     font-weight: 1000;
     color: #ffffff;
     font-family: 'Barlow', sans-serif;
-    line-height: 1;
+    line-height: 1.5;
     text-transform: uppercase;
     color: #ff5f13;
 }
 
-/* Phần chữ trong stock-text */
-.slider-area .hero__caption .stock-text h2 {
-    font-size: 4vw; /* Sử dụng vw để kích thước chữ phụ thuộc vào chiều rộng của viewport */
-    font-weight: 1000;
-    margin: 0;
-    line-height: 2;
-    text-transform: uppercase;
-    position: absolute;
-    color: #ff5f13;
+/* Media query cho màn hình có chiều rộng nhỏ hơn 768px */
+@media screen and (max-width: 768px) {
+    .slider-area .hero__caption h1,
+    .slider-area .hero__caption .stock-text h2 {
+        font-size: 8vw; /* Điều chỉnh kích thước chữ cho màn hình nhỏ hơn 768px */
+    }
 }
+
+/* Media query cho màn hình có chiều rộng nhỏ hơn hoặc bằng 480px */
+@media screen and (max-width: 480px) {
+    .slider-area .hero__caption h1,
+    .slider-area .hero__caption .stock-text h2 {
+        font-size: 10vw; /* Điều chỉnh kích thước chữ cho màn hình nhỏ hơn hoặc bằng 480px */
+    }
+}
+
+/* Thêm các media queries khác nếu cần */
+
 
 
 .slider-area .hero__caption .hero-text1 span,

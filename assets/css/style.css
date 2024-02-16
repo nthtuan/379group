@@ -2850,74 +2850,33 @@ hr {
 }
 
 /* Reset some default styles for better cross-browser consistency */
-body, h1, h2, p {
-    margin: 0;
-    padding: 0;
-}
-
-/* Apply a box-sizing border-box model to all elements */
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
-/* Set base font size and line height */
-body {
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-/* Apply styles to the slider area */
 .slider-area {
-    width: 100%;
-    overflow: hidden;
+    margin-top: -1px
 }
 
-/* Apply styles to the slider container */
-.slider-active {
-    display: flex;
-    flex-direction: column;
+.slider-area .hero__caption {
+    margin-left: 27px;
+    padding-top: 100px
 }
 
-/* Apply styles to each individual slider */
-.single-slider {
-    position: relative;
-    width: 100%;
-    height: auto; /* or set a specific height */
-    background-size: cover;
-    background-position: center;
-}
 
-/* Apply styles to the hero caption */
-.hero__caption {
-    text-align: center;
-    color: #fff; /* Adjust color as needed */
-    padding: 100px 0; /* Adjust padding as needed */
-}
-
-/* Apply styles to the hero caption h1 and h2 */
-.hero__caption h1,
-.hero__caption h2 {
-    font-size: 3em;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-/* Apply styles to the stock text */
-.stock-text {
-    margin-top: 20px;
-}
-
-/* Apply responsive styles for smaller screens */
-@media screen and (max-width: 768px) {
-    /* Adjust styles for smaller screens */
-    .hero__caption h1,
-    .hero__caption h2 {
-        font-size: 2em;
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .slider-area .hero__caption {
+        padding-top: 70px
     }
-
-    /* Add more responsive styles as needed */
 }
 
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .slider-area .hero__caption {
+        padding-top: 70px
+    }
+}
+
+@media (max-width: 575px) {
+    .slider-area .hero__caption {
+        padding-top: 70px
+    }
+}
 .company-name {
     text-align: center;
     font-size: 35px; /* Độ lớn của chữ */
@@ -2936,133 +2895,28 @@ body {
 
 
 
+/* Phần chữ trong slider */
 .slider-area .hero__caption h1 {
-    font-size: 80px;
+    font-size: 5vw; /* Sử dụng vw để kích thước chữ phụ thuộc vào chiều rộng của viewport */
     font-weight: 1000;
     color: #ffffff;
     font-family: 'Barlow', sans-serif;
-    line-height: 0;
+    line-height: 1;
     text-transform: uppercase;
     color: #ff5f13;
-    margin: 1;
-    padding: 1;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-    .slider-area .hero__caption h1 {
-        font-size: 135px
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .slider-area .hero__caption h1 {
-        font-size: 110px
-    }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-    .slider-area .hero__caption h1 {
-        font-size: 72px
-    }
-}
-
-@media (max-width: 575px) {
-    .slider-area .hero__caption h1 {
-        font-size: 42px
-    }
-}
-
-.slider-area .hero__caption .stock-text {
-    position: relative;
-    left: 119px;
-    top: -38px;
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-    .slider-area .hero__caption .stock-text {
-        top: -29px;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .slider-area .hero__caption .stock-text {
-        top: -19px;
-    }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-    .slider-area .hero__caption .stock-text {
-        top: -12px;
-        left: 40px;
-    }
-}
-
-@media (max-width: 575px) {
-    .slider-area .hero__caption .stock-text {
-        top: 0;
-        left: 0;
-    }
-}
-
-
+/* Phần chữ trong stock-text */
 .slider-area .hero__caption .stock-text h2 {
-    font-size: 75px;
+    font-size: 5vw; /* Sử dụng vw để kích thước chữ phụ thuộc vào chiều rộng của viewport */
     font-weight: 1000;
     margin: 0;
-    line-height: 4;
+    line-height: 2;
     text-transform: uppercase;
     position: absolute;
-    color: #fff
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-    .slider-area .hero__caption .stock-text h2 {
-        font-size: 110px
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .slider-area .hero__caption .stock-text h2 {
-        font-size: 60px
-    }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-    .slider-area .hero__caption .stock-text h2 {
-        font-size: 52px
-    }
-}
-
-@media (max-width: 575px) {
-    .slider-area .hero__caption .stock-text h2 {
-        font-size: 27px;
-        margin-bottom: 25px
-    }
-}
-
-.slider-area .hero__caption .stock-text h2:nth-child(1) {
-    color: transparent;
-    -webkit-text-stroke: 1px #fff;
-    -webkit-text-fill-color: transparent
-}
-
-.slider-area .hero__caption .stock-text h2:nth-child(2) {
     color: #ff5f13;
-    -webkit-animation: animate 4s ease-in-out infinite;
-    animation: animate 4s ease-in-out infinite
 }
 
-@keyframes animate {
-
-    0%,
-    100% {
-        clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 69%, 100% 52%, 100% 100%, 0% 100%)
-    }
-
-    50% {
-        clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%)
-    }
-}
 
 .slider-area .hero__caption .hero-text1 span,
 .slider-area .hero__caption .hero-text1 a,

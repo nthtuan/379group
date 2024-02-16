@@ -2887,7 +2887,7 @@ hr {
 /* Kiểu cho màn hình nhỏ (điện thoại) */
 @media only screen and (max-width: 600px) {
     .company-name {
-        font-size: 20px; /* Điều chỉnh kích thước chữ cho màn hình nhỏ */
+        font-size: 15px; /* Điều chỉnh kích thước chữ cho màn hình nhỏ */
         margin-top: 5px; /* Điều chỉnh margin cho màn hình nhỏ nếu cần thiết */
     }
 }
@@ -2897,7 +2897,7 @@ hr {
 /* Phần chữ trong slider */
 .slider-area .hero__caption h1,
 .slider-area .hero__caption .stock-text h2 {
-    font-size: 5vw; /* Sử dụng vw để kích thước chữ phụ thuộc vào chiều rộng của viewport */
+    font-size: 4vw; /* Sử dụng vw để kích thước chữ phụ thuộc vào chiều rộng của viewport */
     font-weight: 1000;
     color: #ffffff;
     font-family: 'Barlow', sans-serif;

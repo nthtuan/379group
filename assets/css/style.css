@@ -2887,8 +2887,8 @@ hr {
 /* Kiểu cho màn hình nhỏ (điện thoại) */
 @media only screen and (max-width: 600px) {
     .company-name {
-        font-size: 15px; /* Điều chỉnh kích thước chữ cho màn hình nhỏ */
-        margin-top: 5px; /* Điều chỉnh margin cho màn hình nhỏ nếu cần thiết */
+        font-size: 10px; /* Điều chỉnh kích thước chữ cho màn hình nhỏ */
+        margin-top: 1px; /* Điều chỉnh margin cho màn hình nhỏ nếu cần thiết */
     }
 }
 
@@ -2915,10 +2915,10 @@ hr {
 }
 
 /* Media query cho màn hình có chiều rộng nhỏ hơn hoặc bằng 480px */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 180px) {
     .slider-area .hero__caption h1,
     .slider-area .hero__caption .stock-text h2 {
-        font-size: 10vw; /* Điều chỉnh kích thước chữ cho màn hình nhỏ hơn hoặc bằng 480px */
+        font-size: 5vw; /* Điều chỉnh kích thước chữ cho màn hình nhỏ hơn hoặc bằng 480px */
     }
 }
 

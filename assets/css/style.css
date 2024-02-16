@@ -2703,18 +2703,6 @@ hr {
     display: none
 }
 
-@media (max-width: 10px) {
-    .main-header .logo .small-logo {
-        display: unset
-    }
-}
-
-@media (max-width: 10px) {
-    .main-header .logo .big-logo {
-        display: none
-    }
-}
-
 .main-header ul>li:hover>ul.submenu {
     visibility: visible;
     opacity: 1;
@@ -2899,7 +2887,7 @@ hr {
 /* Kiểu cho màn hình nhỏ (điện thoại) */
 @media only screen and (max-width: 600px) {
     .company-name {
-        font-size: 30px; /* Điều chỉnh kích thước chữ cho màn hình nhỏ */
+        font-size: 20px; /* Điều chỉnh kích thước chữ cho màn hình nhỏ */
         margin-top: 5px; /* Điều chỉnh margin cho màn hình nhỏ nếu cần thiết */
     }
 }

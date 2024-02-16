@@ -2341,7 +2341,7 @@ hr {
 }
 
 .section-tittle.section-tittle3 .front-text h2 {
-    font-size: 70px
+    font-size: 50px
 }
 
 @media (max-width: 575px) {
@@ -2799,7 +2799,7 @@ hr {
 
 /* Mặc định cho mọi kích thước màn hình */
 .slider-height {
-    min-height: 1000px;
+    min-height: 800px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;

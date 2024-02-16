@@ -2849,33 +2849,75 @@ hr {
     }
 }
 
+/* Reset some default styles for better cross-browser consistency */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a box-sizing border-box model to all elements */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Set base font size and line height */
+body {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Apply styles to the slider area */
 .slider-area {
-    margin-top: -1px
+    width: 100%;
+    overflow: hidden;
 }
 
-.slider-area .hero__caption {
-    margin-left: 27px;
-    padding-top: 100px
+/* Apply styles to the slider container */
+.slider-active {
+    display: flex;
+    flex-direction: column;
 }
 
+/* Apply styles to each individual slider */
+.single-slider {
+    position: relative;
+    width: 100%;
+    height: auto; /* or set a specific height */
+    background-size: cover;
+    background-position: center;
+}
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .slider-area .hero__caption {
-        padding-top: 70px
+/* Apply styles to the hero caption */
+.hero__caption {
+    text-align: center;
+    color: #fff; /* Adjust color as needed */
+    padding: 100px 0; /* Adjust padding as needed */
+}
+
+/* Apply styles to the hero caption h1 and h2 */
+.hero__caption h1,
+.hero__caption h2 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Apply styles to the stock text */
+.stock-text {
+    margin-top: 20px;
+}
+
+/* Apply responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .hero__caption h1,
+    .hero__caption h2 {
+        font-size: 2em;
     }
+
+    /* Add more responsive styles as needed */
 }
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-    .slider-area .hero__caption {
-        padding-top: 70px
-    }
-}
-
-@media (max-width: 575px) {
-    .slider-area .hero__caption {
-        padding-top: 70px
-    }
-}
 .company-name {
     text-align: center;
     font-size: 35px; /* Độ lớn của chữ */
@@ -2887,7 +2929,7 @@ hr {
 /* Kiểu cho màn hình nhỏ (điện thoại) */
 @media only screen and (max-width: 600px) {
     .company-name {
-        font-size: 10px; /* Điều chỉnh kích thước chữ cho màn hình nhỏ */
+        font-size: 20px; /* Điều chỉnh kích thước chữ cho màn hình nhỏ */
         margin-top: 5px; /* Điều chỉnh margin cho màn hình nhỏ nếu cần thiết */
     }
 }

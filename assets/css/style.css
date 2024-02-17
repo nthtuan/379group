@@ -2887,7 +2887,7 @@ hr {
 /* Kiểu cho màn hình nhỏ (điện thoại) */
 @media only screen and (max-width: 600px) {
     .company-name {
-        font-size: 10px; /* Điều chỉnh kích thước chữ cho màn hình nhỏ */
+        font-size: 15px; /* Điều chỉnh kích thước chữ cho màn hình nhỏ */
         margin-top: 1px; /* Điều chỉnh margin cho màn hình nhỏ nếu cần thiết */
     }
 }
@@ -2899,7 +2899,6 @@ hr {
 .slider-area .hero__caption .stock-text h2 {
     font-size: 4vw; /* Sử dụng vw để kích thước chữ phụ thuộc vào chiều rộng của viewport */
     font-weight: 1000;
-    color: #ffffff;
     font-family: 'Barlow', sans-serif;
     line-height: 1.5;
     text-transform: uppercase;
@@ -2910,7 +2909,8 @@ hr {
 @media screen and (max-width: 768px) {
     .slider-area .hero__caption h1,
     .slider-area .hero__caption .stock-text h2 {
-        font-size: 8vw; /* Điều chỉnh kích thước chữ cho màn hình nhỏ hơn 768px */
+        font-size: 5vw; /* Điều chỉnh kích thước chữ cho màn hình nhỏ hơn 768px */
+        margin-bottom: 20px;
     }
 }
 
@@ -2918,7 +2918,8 @@ hr {
 @media screen and (max-width: 180px) {
     .slider-area .hero__caption h1,
     .slider-area .hero__caption .stock-text h2 {
-        font-size: 5vw; /* Điều chỉnh kích thước chữ cho màn hình nhỏ hơn hoặc bằng 480px */
+        font-size: 3vw; /* Điều chỉnh kích thước chữ cho màn hình nhỏ hơn hoặc bằng 480px */
+        margin-bottom: 25px;
     }
 }
 

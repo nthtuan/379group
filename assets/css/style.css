@@ -7189,3 +7189,27 @@ del {
 .switch-wrap {
     margin-bottom: 10px
 }
+
+.big-logo {
+    max-width: 100%; /* Đảm bảo logo không vượt quá kích thước tự nhiên */
+    height: auto; /* Bảo toàn tỷ lệ hình dáng khi thay đổi kích thước */
+    display: block; /* Loại bỏ bất kỳ kiểu inline mặc định nào */
+    margin: 0 auto; /* Canh giữa logo theo chiều ngang */
+    /* Các kiểu thêm cho tính đáp ứng */
+    width: 100%; /* Đặt chiều rộng là 100% để đảm bảo tính đáp ứng */
+}
+
+/* Media query for tablets (iPad, etc.) */
+@media only screen and (max-width: 991px) {
+    .big-logo img {
+        width: 120px; /* Adjust width for tablets */
+    }
+}
+
+/* Media query for mobile phones */
+@media only screen and (max-width: 767px) {
+    .big-logo img {
+        width: 80px; /* Adjust width for mobile phones */
+        
+    }
+}

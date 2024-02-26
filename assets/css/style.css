@@ -2855,7 +2855,12 @@ hr {
 
 .slider-area .hero__caption {
     margin-left: 27px;
-    padding-top: 100px
+    padding-top: 100px;
+    text-shadow: 
+        -2px -2px 0 white,  
+         2px -2px 0 white,
+        -2px  2px 0 white,
+         2px  2px 0 white;
 }
 
 
@@ -7210,6 +7215,6 @@ del {
 @media only screen and (max-width: 767px) {
     .big-logo img {
         width: 80px; /* Adjust width for mobile phones */
-        
+
     }
 }

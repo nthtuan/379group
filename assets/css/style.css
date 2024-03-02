@@ -2849,25 +2849,6 @@ hr {
     }
 }
 
-.slider-area {
-    /* Nếu bạn muốn thiết lập chiều cao cố định cho khu vực slider */
-    height: 500px; /* Thay 400px bằng giá trị mong muốn */
-
-    /* Nếu bạn muốn chiều rộng 100% của đối tượng cha */
-    width: 100%;
-}
-
-.single-slider {
-    /* Nếu bạn muốn chiều cao cố định cho từng slider con */
-    height: 100%; /* Hoặc có thể thay bằng giá trị mong muốn */
-
-    /* Nếu bạn muốn chiều rộng 100% của đối tượng cha */
-    width: 100%;
-
-    /* Nếu bạn muốn ảnh nền không bị căn giữ, có thể sử dụng thuộc tính object-fit */
-    object-fit: cover; /* hoặc contain tùy thuộc vào yêu cầu của bạn */
-}
-
 /* Dành cho màn hình máy tính */
 @media only screen and (min-width: 768px) {
     .single-slider {
